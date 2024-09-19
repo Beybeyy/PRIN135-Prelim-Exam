@@ -241,4 +241,79 @@ and break lines.
         </tbody>
     </table>
 </section>
+
+<section id="media"></section>
+    <  <h1>HTML MEDIA(<a href="#top">top</a>)</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Markup</th>
+                <th>Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Image</td>
+                <td><code>&lt;img src="source.jpg" alt="alternate text"&gt;</code></td>
+                <td><img src=" https://picsum.photos/320/240" alt="alternate text"> 
+                </td>
+            </tr>
+            <tr>
+                <td>Video</td>
+                <td>
+                    <code>
+                    <pre>
+&lt;video&gt;
+&lt;source src="source.mp4" type="video/mp4"&gt;
+&lt;source src="source.ogg" type="video/ogg"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+                    </pre>
+                    </code>
+                </td>
+                <td>
+                    <video controls width="320" height="270"> 
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+            <tr>
+                <td>Audio</td>
+                <td>
+                    <code>
+                    <pre>
+&lt;aduio&gt; controls
+&lt;source src="source.ogg" type="audio/ogg"&gt;
+&lt;source src="source.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;
+                    </pre>
+                    </code>
+                </td>
+                <td>
+                    <aduio controls> 
+                        <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/ogg">
+                        <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>IFrame</td>
+                <td>
+                    <code>
+                        &lt;iframe src="url"&gt; &lt;/iframe&gt;
+                    </code>
+                </td>
+                <td>
+                    <iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed" width="320"> </iframe>
+                </td>
+        </tbody>
+    </table>
+
+</section>
+            
 </html>
