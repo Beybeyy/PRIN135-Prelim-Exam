@@ -6,7 +6,8 @@
 body {
     display: flex;
     background-color: rgb(10, 17, 17);
-    flex-direction: column; 
+    flex-direction: column;
+
 }
 
 h1 {
@@ -39,6 +40,7 @@ a {
     height: 100vh;
     overflow-y: auto;
     transition: all 0.3s ease;
+    z-index: 1;
 }
 
 .sidenav ul {
@@ -74,6 +76,7 @@ a {
     margin-left: 270px; 
     font-family: 'Nanum Gothic', sans-serif;
     color: darkcyan;
+    
 }
 
 table {
@@ -94,17 +97,20 @@ thead tr {
 @media (max-width: 768px) {
     .sidenav {
         width: 100%;
-        height: auto;
-        position: relative;
+        height: 100px;
+        position: fixed;
+        z-index: 1;
     }
 
     .content {
+        margin-top: 120px; /* Adjust to create space for the sidenav */
         margin-left: 0;
         padding: 10px;
     }
 
     h1 {
         font-size: 1.5em;
+        margin-top: 5px;
     }
     
     table, th, td {
@@ -112,9 +118,15 @@ thead tr {
     }
 }
 
-@media (max-width:425px) {
+@media (max-width: 425px) {
     .sidenav ul li {
         padding: 8px;
+    }
+
+    .content {
+        margin-top: 120px; 
+        margin-left: 0;
+        padding: 10px;
     }
 
     h1 {
